@@ -6,16 +6,16 @@ rem Check if argument is STOP or START
 if not ""%1"" == ""START"" goto stop
 
 
-"C:\Open-sooq-task\New folder\mysql\bin\mysqld" --defaults-file="C:\Open-sooq-task\New folder\mysql\bin\my.ini" --standalone --console
+"C:\Program Files (x86)\xampp\mysql\bin\mysqld" --defaults-file="C:\Program Files (x86)\xampp\mysql\bin\my.ini" --standalone --console
 if errorlevel 1 goto error
 goto finish
 
 :stop
-"C:\Open-sooq-task\New folder\apache\bin\pv" -f -k mysqld.exe -q
+"C:\Program Files (x86)\xampp\apache\bin\pv" -f -k mysqld.exe -q
 
-if not exist "C:\Open-sooq-task\New folder\mysql\data\%computername%.pid" goto finish
+if not exist "C:\Program Files (x86)\xampp\mysql\data\%computername%.pid" goto finish
 echo Delete %computername%.pid ...
-del "C:\Open-sooq-task\New folder\mysql\data\%computername%.pid"
+del "C:\Program Files (x86)\xampp\mysql\data\%computername%.pid"
 goto finish
 
 

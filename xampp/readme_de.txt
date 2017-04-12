@@ -1,4 +1,4 @@
-###### ApacheFriends XAMPP Version 5.6.30 ######
+###### ApacheFriends XAMPP Version 7.1.1 ######
 
 Wichtig! PHP in diesem Paket benötigt die Microsoft Visual C++ 2008 Redistributable Erweiterung von
 http://www.microsoft.com/en-us/download/details.aspx?id=5582. Bitte stellen Sie sicher das die VC++ 2008 
@@ -6,9 +6,9 @@ Runtime Bibliothek auf Ihrem System installiert ist.
 
   + Apache 2.4.25
   + MariaDB 10.1.21
-  + PHP 5.6.30 (VC11 X86 32bit thread safe) + PEAR
+  + PHP 7.1.1 (VC14 X86 32bit thread safe) + PEAR
   + phpMyAdmin 4.6.5.2
-  + OpenSSL 1.0.2d
+  + OpenSSL 1.0.2f
   + ADOdb 518a
   + Mercury Mail Transport System v4.62 (nicht in der Portable Version)
   + FileZilla FTP Server 0.9.41 (nicht in der Portable Version)

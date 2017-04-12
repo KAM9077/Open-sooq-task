@@ -5,38 +5,38 @@ rem Check if argument is STOP or START
 
 if not ""%1"" == ""START"" goto stop
 
-if exist C:\Open-sooq-task\New folder\hypersonic\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\server\hsql-sample-database\scripts\ctl.bat START)
-if exist C:\Open-sooq-task\New folder\ingres\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\ingres\scripts\ctl.bat START)
-if exist C:\Open-sooq-task\New folder\mysql\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\mysql\scripts\ctl.bat START)
-if exist C:\Open-sooq-task\New folder\postgresql\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\postgresql\scripts\ctl.bat START)
-if exist C:\Open-sooq-task\New folder\apache\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\apache\scripts\ctl.bat START)
-if exist C:\Open-sooq-task\New folder\openoffice\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\openoffice\scripts\ctl.bat START)
-if exist C:\Open-sooq-task\New folder\apache-tomcat\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\apache-tomcat\scripts\ctl.bat START)
-if exist C:\Open-sooq-task\New folder\resin\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\resin\scripts\ctl.bat START)
-if exist C:\Open-sooq-task\New folder\jboss\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\jboss\scripts\ctl.bat START)
-if exist C:\Open-sooq-task\New folder\jetty\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\jetty\scripts\ctl.bat START)
-if exist C:\Open-sooq-task\New folder\subversion\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\subversion\scripts\ctl.bat START)
+if exist C:\Program Files (x86)\xampp\hypersonic\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\server\hsql-sample-database\scripts\ctl.bat START)
+if exist C:\Program Files (x86)\xampp\ingres\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\ingres\scripts\ctl.bat START)
+if exist C:\Program Files (x86)\xampp\mysql\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\mysql\scripts\ctl.bat START)
+if exist C:\Program Files (x86)\xampp\postgresql\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\postgresql\scripts\ctl.bat START)
+if exist C:\Program Files (x86)\xampp\apache\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\apache\scripts\ctl.bat START)
+if exist C:\Program Files (x86)\xampp\openoffice\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\openoffice\scripts\ctl.bat START)
+if exist C:\Program Files (x86)\xampp\apache-tomcat\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\apache-tomcat\scripts\ctl.bat START)
+if exist C:\Program Files (x86)\xampp\resin\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\resin\scripts\ctl.bat START)
+if exist C:\Program Files (x86)\xampp\jboss\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\jboss\scripts\ctl.bat START)
+if exist C:\Program Files (x86)\xampp\jetty\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\jetty\scripts\ctl.bat START)
+if exist C:\Program Files (x86)\xampp\subversion\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\subversion\scripts\ctl.bat START)
 rem RUBY_APPLICATION_START
-if exist C:\Open-sooq-task\New folder\lucene\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\lucene\scripts\ctl.bat START)
-if exist C:\Open-sooq-task\New folder\third_application\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\third_application\scripts\ctl.bat START)
+if exist C:\Program Files (x86)\xampp\lucene\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\lucene\scripts\ctl.bat START)
+if exist C:\Program Files (x86)\xampp\third_application\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\third_application\scripts\ctl.bat START)
 goto end
 
 :stop
 echo "Stopping services ..."
-if exist C:\Open-sooq-task\New folder\third_application\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\third_application\scripts\ctl.bat STOP)
-if exist C:\Open-sooq-task\New folder\lucene\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\lucene\scripts\ctl.bat STOP)
+if exist C:\Program Files (x86)\xampp\third_application\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\third_application\scripts\ctl.bat STOP)
+if exist C:\Program Files (x86)\xampp\lucene\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\lucene\scripts\ctl.bat STOP)
 rem RUBY_APPLICATION_STOP
-if exist C:\Open-sooq-task\New folder\subversion\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\subversion\scripts\ctl.bat STOP)
-if exist C:\Open-sooq-task\New folder\jetty\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\jetty\scripts\ctl.bat STOP)
-if exist C:\Open-sooq-task\New folder\hypersonic\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\server\hsql-sample-database\scripts\ctl.bat STOP)
-if exist C:\Open-sooq-task\New folder\jboss\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\jboss\scripts\ctl.bat STOP)
-if exist C:\Open-sooq-task\New folder\resin\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\resin\scripts\ctl.bat STOP)
-if exist C:\Open-sooq-task\New folder\apache-tomcat\scripts\ctl.bat (start /MIN /B /WAIT C:\Open-sooq-task\New folder\apache-tomcat\scripts\ctl.bat STOP)
-if exist C:\Open-sooq-task\New folder\openoffice\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\openoffice\scripts\ctl.bat STOP)
-if exist C:\Open-sooq-task\New folder\apache\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\apache\scripts\ctl.bat STOP)
-if exist C:\Open-sooq-task\New folder\ingres\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\ingres\scripts\ctl.bat STOP)
-if exist C:\Open-sooq-task\New folder\mysql\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\mysql\scripts\ctl.bat STOP)
-if exist C:\Open-sooq-task\New folder\postgresql\scripts\ctl.bat (start /MIN /B C:\Open-sooq-task\New folder\postgresql\scripts\ctl.bat STOP)
+if exist C:\Program Files (x86)\xampp\subversion\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\subversion\scripts\ctl.bat STOP)
+if exist C:\Program Files (x86)\xampp\jetty\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\jetty\scripts\ctl.bat STOP)
+if exist C:\Program Files (x86)\xampp\hypersonic\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\server\hsql-sample-database\scripts\ctl.bat STOP)
+if exist C:\Program Files (x86)\xampp\jboss\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\jboss\scripts\ctl.bat STOP)
+if exist C:\Program Files (x86)\xampp\resin\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\resin\scripts\ctl.bat STOP)
+if exist C:\Program Files (x86)\xampp\apache-tomcat\scripts\ctl.bat (start /MIN /B /WAIT C:\Program Files (x86)\xampp\apache-tomcat\scripts\ctl.bat STOP)
+if exist C:\Program Files (x86)\xampp\openoffice\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\openoffice\scripts\ctl.bat STOP)
+if exist C:\Program Files (x86)\xampp\apache\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\apache\scripts\ctl.bat STOP)
+if exist C:\Program Files (x86)\xampp\ingres\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\ingres\scripts\ctl.bat STOP)
+if exist C:\Program Files (x86)\xampp\mysql\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\mysql\scripts\ctl.bat STOP)
+if exist C:\Program Files (x86)\xampp\postgresql\scripts\ctl.bat (start /MIN /B C:\Program Files (x86)\xampp\postgresql\scripts\ctl.bat STOP)
 
 :end
 
